@@ -190,6 +190,66 @@ def change_status(machine, new_status):
 
 
 
+
+
+# Rewards & Redemption
+# باستخدام Functions + Lists
+# =========================================
+# قائمة أسماء المكافآت
+reward_names = ["Coffee Voucher","Food Discount","Shopping Voucher","Movie Ticket"]
+# قائمة النقاط المطلوبة لكل مكافأة
+reward_points = [500,750,1000, 1200]
+# لعرض الـ Rewards
+def show_rewards():
+    # بنطبع عنوان القائمة
+    print("===== Available Rewards =====")
+    #  عشان نعرض كل المكافآت
+    for i in range(len(reward_names)):
+        # بنعرض رقم المكافأة
+        print(i + 1, "-", reward_names[i])
+        # بنعرض النقاط المطلوبة
+        print("   Points:", reward_points[i])
+#  لعرض نقاط المستخدم
+def show_user_points(user):
+  points=user["points"]
+  print(f"your points:\n{points}")
+#  لعمل Redeem
+def redeem_reward(choice):
+    text="Available Reward"
+    print(text.title())
+    # بنتأكد إن اختيار المستخدم صحيح
+    if choice < 1 or choice > len(reward_names):
+        # لو الاختيار غلط
+        print("Invalid Choice!")
+        return
+    # بنجيب رقم المكافأة من الـ list
+    index = choice - 1
+    # بنجيب اسم المكافأة
+    selected_reward = reward_names[index]
+    # بنجيب عدد النقاط المطلوبة
+    required_points = reward_points[index]
+    # بنتأكد إن نقاط المستخدم كفاية
+    if current_points >= required_points:
+        # لو كفاية بنخصم النقاط
+        user["points"] -=  required_points
+        # رسالة 
+        print("\n Redeem Successful!")
+        # اسم المكافأة
+        print(f"Reward:{selected_reward}")
+        # النقاط المتبقية
+        print(f"Remaining Points:,{user["points"]}")
+
+    else:
+        # لو النقاط مش كفاية
+        print("Not Enough Points!")
+        # بنحسب النقاط الناقصة
+        missing_points = required_points - current_points
+        # بنعرض عدد النقاط الناقصة
+        print(f"You need {missing_points} more points.")
+
+print(show_rewards())
+print(redeem_reward())
+
 def main():
     setup_default_materials()
 
