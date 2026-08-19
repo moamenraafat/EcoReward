@@ -99,3 +99,6 @@ def process_transaction(user, machine, materials_inserted):
  
  # إرجاع تفاصيل المعاملة
  return transaction
+
+ print(process_transaction(user, machine, materials_inserted))
+
