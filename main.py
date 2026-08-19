@@ -152,6 +152,44 @@ def handle_view_profile():
         print(f"  - {material_name}: {quantity}")
 
 
+
+
+#دة جزء machine  بتاعي يخواتي
+machine = {
+    "machineID": "M001",
+    "location": "cairo mall",
+    "Status": "Available",
+    "Accepted_materials": ["Plastic", "Glass", "Paper", "Metal"]
+}
+
+def display_machine(machine):
+    print("==== machine Informations ====")
+    print(f"Machine ID: {machine["machineID"]}")
+    print(f"Location: {machine["location"]}")
+    print(f"Status: {machine["Status"]}")    
+    print(f"Accepted Materials: {machine["Accepted_materials"]}")
+
+def isAvailable(machine):
+    if machine["Status"] == "Available":
+        return True
+    else:
+        return False        
+
+def check_material(machine, material):
+    if material in machine["Accepted_material"]:
+        print(f"{material} is accepted.")
+        return True
+    else:
+        print(f"{material} is not accepted")
+        return False
+
+def change_status(machine, new_status):
+     machine["Status"] = new_status 
+     print(f"machine status changed to {new_status}")  
+
+
+
+
 def main():
     setup_default_materials()
 
