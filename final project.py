@@ -4,7 +4,7 @@ import time
 # قائمة عامة لحفظ كل المعاملات اللي بتحصل في السيستم
 all_transactions = []
 
-def process_transaction(user, machine, material_inserted):
+def process_transaction(user, machine, materials_inserted):
  """
  user: قاموس فيه بيانات المستخدم الحالي 
     machine: قاموس فيه بيانات الماكينة 
