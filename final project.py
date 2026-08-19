@@ -5,18 +5,18 @@ import time
 all_transactions = []
 
 def process_transaction(user, machine, material_inserted):
-  """
+ """
  user: قاموس فيه بيانات المستخدم الحالي 
     machine: قاموس فيه بيانات الماكينة 
     materials_inserted: قائمة بالمواد اللي اترمت 
-  """
+ """
  # 1. توليد Transaction ID وتاريخ العملية  
  transaction_id = f"TXN-{len(all_transactions) + 1001}"
  current_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
+ 
  total_points_earned = 0
  transaction_materials = []
-
+ 
  # 2. حساب النقاط بناءً على كل خامة
  for item in materials_inserted:
    material_data = item["material"]  # قاموس الخامة (Name, Points, Type)
@@ -30,8 +30,8 @@ def process_transaction(user, machine, material_inserted):
     })
 
  user["points"] += total_points_earned
-
-
+ 
+ 
  # 4. بناء هيكل الـ Transaction بالكامل
  transaction = {
         "transaction_id": transaction_id,
@@ -45,6 +45,6 @@ def process_transaction(user, machine, material_inserted):
  # 5. حفظ المعاملة في القائمة العامة وفي سجل المستخدم
  all_transactions.append(transaction)
  user["recycling_history"].append(transaction)
-
+ 
  # إرجاع تفاصيل المعاملة
  return transaction
