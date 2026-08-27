@@ -2,6 +2,8 @@
     {
         "machine_id": "MAC001",
         "location": "Tahrir Square, Cairo",
+        "lat": 30.0444,
+        "lon": 31.2357,
         "status": "Available",
         "accepted_materials": [
             "Plastic Bottle",
@@ -12,6 +14,8 @@
     {
         "machine_id": "MAC002",
         "location": "Zamalek (Gezira Club)",
+        "lat": 30.0595,
+        "lon": 31.2223,
         "status": "Available",
         "accepted_materials": [
             "Plastic Bottle",
@@ -23,6 +27,8 @@
     {
         "machine_id": "MAC003",
         "location": "Alexandria Corniche",
+        "lat": 31.2001,
+        "lon": 29.9187,
         "status": "Available",
         "accepted_materials": [
             "Aluminum Cans",
@@ -33,6 +39,8 @@
     {
         "machine_id": "MAC004",
         "location": "Mansoura University",
+        "lat": 31.0419,
+        "lon": 31.3533,
         "status": "Available",
         "accepted_materials": [
             "Plastic Bottle",
@@ -43,6 +51,8 @@
     {
         "machine_id": "MAC005",
         "location": "Aswan High Dam",
+        "lat": 23.9698,
+        "lon": 32.8778,
         "status": "Available",
         "accepted_materials": [
             "Plastic Bottle",
@@ -53,12 +63,40 @@
     },
     {
         "machine_id": "MAC006",
-        "location": "Cairo",
+        "location": "Cairo Festival City",
+        "lat": 30.0315,
+        "lon": 31.4087,
         "status": "Available",
         "accepted_materials": [
             "Plastic",
             "Glass"
         ],
         "capacity": "0%"
+    },
+    {
+        "machine_id": "MAC007",
+        "location": "Menofia University (Shebin El Koum)",
+        "lat": 30.5596,
+        "lon": 31.0118,
+        "status": "Available",
+        "accepted_materials": [
+            "Plastic Bottle",
+            "Aluminum Cans",
+            "Paper"
+        ],
+        "capacity": "20%"
+    },
+    {
+        "machine_id": "MAC008",
+        "location": "Zagazig (Moamen Mohamed Raafat)",
+        "lat": 30.5877,
+        "lon": 31.5020,
+        "status": "Available",
+        "accepted_materials": [
+            "Plastic Bottle",
+            "Aluminum Cans",
+            "Glass Bottles"
+        ],
+        "capacity": "10%"
     }
 ]

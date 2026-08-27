@@ -237,7 +237,9 @@ class MappingGUI:
         self.RED_COLOR = (211, 47, 47)
 
     def run(self):
-        pygame.init()
+        if not pygame.get_init():
+            pygame.init()
+
         screen = pygame.display.set_mode((self.width, self.height))
         pygame.display.set_caption("EcoReward - Nearest Machines Finder")
 
@@ -335,11 +337,9 @@ class MappingGUI:
             pygame.display.flip()
             clock.tick(60)
 
-        pygame.quit()
-
 
 # ================= =================
-#  التشغيل الرئيسي
+#  التشغيل الرئيسي عند الاختبار المنفصل
 # ================= =================
 
 if __name__ == "__main__":
@@ -347,3 +347,5 @@ if __name__ == "__main__":
     manager = MachineManager()
     gui = MappingGUI(u_lat, u_lon, manager)
     gui.run()
+    pygame.quit()
+    sys.exit()
