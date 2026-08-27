@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4ed4cb2b3f024e69424cad737950603c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4ed4cb2b3f024e69424cad737950603c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4ed4cb2b3f024e69424cad737950603c = L.map(
+                "map_4ed4cb2b3f024e69424cad737950603c",
+                {
+                    center: [30.0561, 31.3301],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e1e70ff2a4e70e058bd1f3582c1d9ad3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e1e70ff2a4e70e058bd1f3582c1d9ad3.addTo(map_4ed4cb2b3f024e69424cad737950603c);
+        
+    
+            var marker_f730a36d69d64b108be2a3686551d5de = L.marker(
+                [30.0561, 31.3301],
+                {
+}
+            ).addTo(map_4ed4cb2b3f024e69424cad737950603c);
+        
+    
+            var icon_7fe0a00297bb1f07eb4eba16b92cb6dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86500442f464fdd2ba7c2f9320087432 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2bcabfb50d685e9d5d7ceffa844857e3 = $(`<div id="html_2bcabfb50d685e9d5d7ceffa844857e3" style="width: 100.0%; height: 100.0%;"><b>📍 موقعك الحالي</b></div>`)[0];
+                popup_86500442f464fdd2ba7c2f9320087432.setContent(html_2bcabfb50d685e9d5d7ceffa844857e3);
+            
+        
+
+        marker_f730a36d69d64b108be2a3686551d5de.bindPopup(popup_86500442f464fdd2ba7c2f9320087432)
+        ;
+
+        
+    
+    
+            marker_f730a36d69d64b108be2a3686551d5de.bindTooltip(
+                `<div>
+                     موقعك الحالي
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f730a36d69d64b108be2a3686551d5de.setIcon(icon_7fe0a00297bb1f07eb4eba16b92cb6dc);
+            
+    
+            var marker_339f6798bdb607eeb1ce2fb546e49336 = L.marker(
+                [30.0561, 31.3301],
+                {
+}
+            ).addTo(map_4ed4cb2b3f024e69424cad737950603c);
+        
+    
+            var icon_90cc8a7871aaa8294dcfbb986b0df0e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0097425e5d15f70c399bc4582692c16c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_906228f9c14bde3d4558c697b5eafaf9 = $(`<div id="html_906228f9c14bde3d4558c697b5eafaf9" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 14px; direction: rtl; text-align: right; min-width: 180px;">                 <b style='color: green;'>[⭐ الأقرب إليك!]</b><br>                 <b>♻️ ماكينة:</b> Nasr City, Cairo<br>                 <b>الحالة:</b> متاحة للتدوير ✅<br>                 <b>📏 المسافة:</b> 0.0 كم<br><br>                 <a href="https://www.google.com/maps/dir/?api=1&origin=30.0561,31.3301&destination=30.0561,31.3301" target="_blank" style="background-color: #2e7d32; color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; display: inline-block;">فتح الاتجاهات في Google Maps</a>             </div>             </div>`)[0];
+                popup_0097425e5d15f70c399bc4582692c16c.setContent(html_906228f9c14bde3d4558c697b5eafaf9);
+            
+        
+
+        marker_339f6798bdb607eeb1ce2fb546e49336.bindPopup(popup_0097425e5d15f70c399bc4582692c16c)
+        ;
+
+        
+    
+    
+            marker_339f6798bdb607eeb1ce2fb546e49336.bindTooltip(
+                `<div>
+                     Nasr City, Cairo (0.0 km)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_339f6798bdb607eeb1ce2fb546e49336.setIcon(icon_90cc8a7871aaa8294dcfbb986b0df0e7);
+            
+    
+            var marker_4eb607b17fc5da0432567979fd5416bc = L.marker(
+                [30.0444, 31.2357],
+                {
+}
+            ).addTo(map_4ed4cb2b3f024e69424cad737950603c);
+        
+    
+            var icon_ec0b444dea6fb7cfdc2a8e70fdfa9bb3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c5282330e274d9165abd71a1b1fc48c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f7a215c38704717ff2563ef401bfe6f4 = $(`<div id="html_f7a215c38704717ff2563ef401bfe6f4" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 14px; direction: rtl; text-align: right; min-width: 180px;">                                  <b>♻️ ماكينة:</b> Tahrir Square, Cairo<br>                 <b>الحالة:</b> متاحة للتدوير ✅<br>                 <b>📏 المسافة:</b> 9.18 كم<br><br>                 <a href="https://www.google.com/maps/dir/?api=1&origin=30.0561,31.3301&destination=30.0444,31.2357" target="_blank" style="background-color: #2e7d32; color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; display: inline-block;">فتح الاتجاهات في Google Maps</a>             </div>             </div>`)[0];
+                popup_3c5282330e274d9165abd71a1b1fc48c.setContent(html_f7a215c38704717ff2563ef401bfe6f4);
+            
+        
+
+        marker_4eb607b17fc5da0432567979fd5416bc.bindPopup(popup_3c5282330e274d9165abd71a1b1fc48c)
+        ;
+
+        
+    
+    
+            marker_4eb607b17fc5da0432567979fd5416bc.bindTooltip(
+                `<div>
+                     Tahrir Square, Cairo (9.18 km)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4eb607b17fc5da0432567979fd5416bc.setIcon(icon_ec0b444dea6fb7cfdc2a8e70fdfa9bb3);
+            
+    
+            var marker_5d48d476cb30c371195a12b3e04ae125 = L.marker(
+                [30.0561, 31.2227],
+                {
+}
+            ).addTo(map_4ed4cb2b3f024e69424cad737950603c);
+        
+    
+            var icon_61c7098b436837786cecb48902b61385 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df4d8d0f396d1ee35ff8ebe38bceeb65 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5472b75f1350d48453654bfc0e72f858 = $(`<div id="html_5472b75f1350d48453654bfc0e72f858" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 14px; direction: rtl; text-align: right; min-width: 180px;">                                  <b>♻️ ماكينة:</b> Zamalek (Gezira Club)<br>                 <b>الحالة:</b> متاحة للتدوير ✅<br>                 <b>📏 المسافة:</b> 10.34 كم<br><br>                 <a href="https://www.google.com/maps/dir/?api=1&origin=30.0561,31.3301&destination=30.0561,31.2227" target="_blank" style="background-color: #2e7d32; color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; display: inline-block;">فتح الاتجاهات في Google Maps</a>             </div>             </div>`)[0];
+                popup_df4d8d0f396d1ee35ff8ebe38bceeb65.setContent(html_5472b75f1350d48453654bfc0e72f858);
+            
+        
+
+        marker_5d48d476cb30c371195a12b3e04ae125.bindPopup(popup_df4d8d0f396d1ee35ff8ebe38bceeb65)
+        ;
+
+        
+    
+    
+            marker_5d48d476cb30c371195a12b3e04ae125.bindTooltip(
+                `<div>
+                     Zamalek (Gezira Club) (10.34 km)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5d48d476cb30c371195a12b3e04ae125.setIcon(icon_61c7098b436837786cecb48902b61385);
+            
+    
+            var marker_7e66bd1619aefe8c6e56d296ca294994 = L.marker(
+                [31.0409, 31.3547],
+                {
+}
+            ).addTo(map_4ed4cb2b3f024e69424cad737950603c);
+        
+    
+            var icon_d41aca378f49f9ce90903811aeb05a2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2b7ec24b93c41f0205c5e293e817576b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3ddac49131f5f6ff42616d482b19e58 = $(`<div id="html_f3ddac49131f5f6ff42616d482b19e58" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 14px; direction: rtl; text-align: right; min-width: 180px;">                                  <b>♻️ ماكينة:</b> Mansoura University<br>                 <b>الحالة:</b> متاحة للتدوير ✅<br>                 <b>📏 المسافة:</b> 109.53 كم<br><br>                 <a href="https://www.google.com/maps/dir/?api=1&origin=30.0561,31.3301&destination=31.0409,31.3547" target="_blank" style="background-color: #2e7d32; color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; display: inline-block;">فتح الاتجاهات في Google Maps</a>             </div>             </div>`)[0];
+                popup_2b7ec24b93c41f0205c5e293e817576b.setContent(html_f3ddac49131f5f6ff42616d482b19e58);
+            
+        
+
+        marker_7e66bd1619aefe8c6e56d296ca294994.bindPopup(popup_2b7ec24b93c41f0205c5e293e817576b)
+        ;
+
+        
+    
+    
+            marker_7e66bd1619aefe8c6e56d296ca294994.bindTooltip(
+                `<div>
+                     Mansoura University (109.53 km)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7e66bd1619aefe8c6e56d296ca294994.setIcon(icon_d41aca378f49f9ce90903811aeb05a2c);
+            
+    
+            var marker_2f11125b7eb1f4b92fd6d9d2cedae144 = L.marker(
+                [31.2001, 29.9187],
+                {
+}
+            ).addTo(map_4ed4cb2b3f024e69424cad737950603c);
+        
+    
+            var icon_b7235914de006f1dcd4351d02705567d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_652dfb2d6f373bfce429b9341b34c551 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92a6046d3f8afe6b9b7664ec4a3db606 = $(`<div id="html_92a6046d3f8afe6b9b7664ec4a3db606" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 14px; direction: rtl; text-align: right; min-width: 180px;">                                  <b>♻️ ماكينة:</b> Alexandria Corniche<br>                 <b>الحالة:</b> متاحة للتدوير ✅<br>                 <b>📏 المسافة:</b> 185.52 كم<br><br>                 <a href="https://www.google.com/maps/dir/?api=1&origin=30.0561,31.3301&destination=31.2001,29.9187" target="_blank" style="background-color: #2e7d32; color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; display: inline-block;">فتح الاتجاهات في Google Maps</a>             </div>             </div>`)[0];
+                popup_652dfb2d6f373bfce429b9341b34c551.setContent(html_92a6046d3f8afe6b9b7664ec4a3db606);
+            
+        
+
+        marker_2f11125b7eb1f4b92fd6d9d2cedae144.bindPopup(popup_652dfb2d6f373bfce429b9341b34c551)
+        ;
+
+        
+    
+    
+            marker_2f11125b7eb1f4b92fd6d9d2cedae144.bindTooltip(
+                `<div>
+                     Alexandria Corniche (185.52 km)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2f11125b7eb1f4b92fd6d9d2cedae144.setIcon(icon_b7235914de006f1dcd4351d02705567d);
+            
+    
+            var marker_3c7bac3f981bba134d987050f8bed74f = L.marker(
+                [23.9698, 32.8772],
+                {
+}
+            ).addTo(map_4ed4cb2b3f024e69424cad737950603c);
+        
+    
+            var icon_e5b92ffe59cb384b4e676bf7f48f862b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_06a4af5088a9971c0b76878484d3975e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b37203a3a053d798704cc9293c9c7127 = $(`<div id="html_b37203a3a053d798704cc9293c9c7127" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; font-size: 14px; direction: rtl; text-align: right; min-width: 180px;">                                  <b>♻️ ماكينة:</b> Aswan High Dam<br>                 <b>الحالة:</b> متاحة للتدوير ✅<br>                 <b>📏 المسافة:</b> 693.87 كم<br><br>                 <a href="https://www.google.com/maps/dir/?api=1&origin=30.0561,31.3301&destination=23.9698,32.8772" target="_blank" style="background-color: #2e7d32; color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; display: inline-block;">فتح الاتجاهات في Google Maps</a>             </div>             </div>`)[0];
+                popup_06a4af5088a9971c0b76878484d3975e.setContent(html_b37203a3a053d798704cc9293c9c7127);
+            
+        
+
+        marker_3c7bac3f981bba134d987050f8bed74f.bindPopup(popup_06a4af5088a9971c0b76878484d3975e)
+        ;
+
+        
+    
+    
+            marker_3c7bac3f981bba134d987050f8bed74f.bindTooltip(
+                `<div>
+                     Aswan High Dam (693.87 km)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3c7bac3f981bba134d987050f8bed74f.setIcon(icon_e5b92ffe59cb384b4e676bf7f48f862b);
+            
+    
+            var poly_line_4d6e1b1a4e1a6da484eed26a354a5b82 = L.polyline(
+                [[30.0561, 31.3301], [30.0561, 31.3301]],
+                {"bubblingMouseEvents": true, "color": "#1E88E5", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1E88E5", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_4ed4cb2b3f024e69424cad737950603c);
+        
+    
+            poly_line_4d6e1b1a4e1a6da484eed26a354a5b82.bindTooltip(
+                `<div>
+                     أقرب مسار لماكينة: Nasr City, Cairo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            map_4ed4cb2b3f024e69424cad737950603c.fitBounds(
+                [[30.0561, 31.3301], [30.0561, 31.3301], [30.0444, 31.2357], [30.0561, 31.2227], [31.0409, 31.3547], [31.2001, 29.9187], [23.9698, 32.8772]],
+                {"padding": [30, 30]}
+            );
+        
+</script>
+</html>

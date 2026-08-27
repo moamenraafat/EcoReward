@@ -1,0 +1,82 @@
+[
+    {
+        "transaction_id": "TXN-1001",
+        "user_id": "U001",
+        "user_name": "Ola Elsheikh",
+        "machine_id": "ER-001",
+        "materials": [
+            {
+                "name": "Plastic",
+                "quantity": 5,
+                "points_per_unit": 5
+            },
+            {
+                "name": "Aluminum",
+                "quantity": 2,
+                "points_per_unit": 10
+            }
+        ],
+        "points_earned": 45,
+        "date": "2026-08-25 01:44:30"
+    },
+    {
+        "transaction_id": "TXN-1001",
+        "user_id": "U001",
+        "user_name": "Ola Elsheikh",
+        "machine_id": "ER-001",
+        "materials": [
+            {
+                "name": "Plastic",
+                "quantity": 5,
+                "points_per_unit": 5
+            },
+            {
+                "name": "Aluminum",
+                "quantity": 2,
+                "points_per_unit": 10
+            }
+        ],
+        "points_earned": 45,
+        "date": "2026-08-25 01:44:46"
+    },
+    {
+        "transaction_id": "TXN-1001",
+        "user_id": "U001",
+        "user_name": "Ola Elsheikh",
+        "machine_id": "ER-001",
+        "materials": [
+            {
+                "name": "Plastic",
+                "quantity": 5,
+                "points_per_unit": 5
+            },
+            {
+                "name": "Aluminum",
+                "quantity": 2,
+                "points_per_unit": 10
+            }
+        ],
+        "points_earned": 45,
+        "date": "2026-08-25 01:46:08"
+    },
+    {
+        "transaction_id": "TXN-1001",
+        "user_id": "U001",
+        "user_name": "Ola Elsheikh",
+        "machine_id": "ER-001",
+        "materials": [
+            {
+                "name": "Plastic",
+                "quantity": 5,
+                "points_per_unit": 5
+            },
+            {
+                "name": "Aluminum",
+                "quantity": 2,
+                "points_per_unit": 10
+            }
+        ],
+        "points_earned": 45,
+        "date": "2026-08-25 01:59:13"
+    }
+]

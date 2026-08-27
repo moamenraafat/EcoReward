@@ -1,0 +1,27 @@
+[
+  {
+    "reward_id": "R101",
+    "name": "Coffee Voucher",
+    "points_required": 500,
+    "is_available": true
+  },
+  {
+    "reward_id": "R102",
+    "name": "Food Discount",
+    "points_required": 750,
+    "is_available": true
+  },
+  {
+    "reward_id": "R103",
+    "name": "Shopping Voucher",
+    "points_required": 1000,
+    "is_available": false
+  },
+  {
+    "reward_id": "R104",
+    "name": "Movie Ticket",
+    "points_required": 1500,
+    "is_available": true
+  }
+
+]

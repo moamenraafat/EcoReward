@@ -1,0 +1,64 @@
+[
+    {
+        "machine_id": "MAC001",
+        "location": "Tahrir Square, Cairo",
+        "status": "Available",
+        "accepted_materials": [
+            "Plastic Bottle",
+            "Aluminum Cans"
+        ],
+        "capacity": "75%"
+    },
+    {
+        "machine_id": "MAC002",
+        "location": "Zamalek (Gezira Club)",
+        "status": "Available",
+        "accepted_materials": [
+            "Plastic Bottle",
+            "Glass Bottles",
+            "Paper"
+        ],
+        "capacity": "30%"
+    },
+    {
+        "machine_id": "MAC003",
+        "location": "Alexandria Corniche",
+        "status": "Available",
+        "accepted_materials": [
+            "Aluminum Cans",
+            "Steel Cans"
+        ],
+        "capacity": "100%"
+    },
+    {
+        "machine_id": "MAC004",
+        "location": "Mansoura University",
+        "status": "Available",
+        "accepted_materials": [
+            "Plastic Bottle",
+            "Paper"
+        ],
+        "capacity": "0%"
+    },
+    {
+        "machine_id": "MAC005",
+        "location": "Aswan High Dam",
+        "status": "Available",
+        "accepted_materials": [
+            "Plastic Bottle",
+            "Aluminum Cans",
+            "Glass Bottles"
+        ],
+        "capacity": "50%"
+    },
+    {
+        "machine_id": "MAC006",
+        "location": "Cairo",
+        "status": "Available",
+        "accepted_materials": [
+            "Plastic",
+            "Glass"
+        ],
+        "capacity": "0%"
+    }
+]

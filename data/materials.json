@@ -1,0 +1,32 @@
+[
+  {
+    "material_name": "Plastic Bottle",
+    "type": "Plastic",
+    "points_per_kg": 50,
+    "unit": "kg"
+    },
+  {
+    "material_name": "Glass Bottles",
+    "type": "Glass",
+    "points_per_kg": 30,
+    "unit": "kg"
+    },
+  {
+    "material_name": "Paper",
+    "type": "Paper",
+    "points_per_kg": 20,
+    "unit": "kg"
+    },
+  {
+    "material_name": "Aluminum Cans",
+    "type": "Metal",
+    "points_per_kg": 100,
+    "unit": "kg"
+    },
+  {
+    "material_name": "Steel Cans",
+    "type": "Metal",
+    "points_per_kg": 80,
+    "unit": "kg"
+    }
+]
